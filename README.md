@@ -4,8 +4,11 @@
 - Get session file for Telegram client
 
 ## Run
-`
-sudo docker run -e API_ID=<API_ID> -e API_HASH="<API_HASH>" -v /path/to/session/file:/usr/src/app/photo.session alchez/telegram-a-dog-a-day
-`
 
-
+```bash
+sudo docker run
+    -e API_ID="<API_ID>"
+    -e API_HASH="<API_HASH>"
+    -e DOGGO_API_KEY="<DOGAPI_API_KEY>"
+    -v /path/to/session/file:/usr/src/app/photo.session alchez/telegram-a-dog-a-day
+```
